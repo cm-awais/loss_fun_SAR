@@ -23,7 +23,7 @@ This code explores the impact of various loss functions on the accuracy of SAR s
 1. Install dependencies: `pip install -r requirements.txt`
 2. Download and extract the Fusar dataset into a directory named "data"
 3. Keep only three classes of data, Fishing, Tanker and Cargo. Whereas keep Fusar data in tiff format, while OpenSARShip in png format.
-4. Run the code: `python train.py`
+4. Run the code in Jypyter Notebook: `sar_loss.ipynb`
 
 **Output:**
 
