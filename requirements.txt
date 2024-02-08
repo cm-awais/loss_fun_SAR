@@ -1,0 +1,6 @@
+torch==1.13.1
+torchvision==0.14.1
+torchnet==0.3.1  # For FocalLoss implementation
+transformers==4.28.5  # For efficient data loading
+pandas==1.5.3  # For data manipulation (optional)
+tqdm==4.64.0  # For progress bars (optional)
