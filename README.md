@@ -4,11 +4,42 @@ This code explores the impact of various loss functions on the accuracy of SAR s
 
 **Key Features:**
 
-- Compares L1, MSE, BCEWithLogitsLoss, and Focal Loss
+- Compares CrossEntropy, L1, MSE, BCEWithLogitsLoss, and Focal Loss
 - Uses PyTorch for deep learning
 - Trains on the Fusar dataset, and OpenSARShip dataset
 - Evaluates accuracy on a test set
 - Supports GPU acceleration
+
+## Loss Functions in SAR Ship Classification: 
+
+This section briefly explains and presents formulas for the loss functions used in the paper:
+
+**1. CrossEntropyLoss:**
+
+* **Formula:** `CrossEntropy(y_true, y_pred) = -Σ[y_true_i * log(y_pred_i)]`
+* **Explanation:** Measures the difference between the predicted probability distribution (y_pred) and the true label distribution (y_true) for each class.
+
+**2. L1 Loss:**
+
+* **Formula:** `L1Loss(y_true, y_pred) = 1/N * Σ|y_true_i - y_pred_i|`
+* **Explanation:** Measures the average absolute difference between predicted values (y_pred) and true values (y_true). Robust to outliers.
+
+**3. Mean Squared Error (MSE):**
+
+* **Formula:** `MSELoss(y_true, y_pred) = 1/N * Σ(y_true_i - y_pred_i)^2`
+* **Explanation:** Measures the average squared difference between predicted values (y_pred) and true values (y_true). Sensitive to outliers.
+
+**4. BCEWithLogitsLoss:**
+
+* **Formula:** `BCEWithLogitsLoss(y_true, y_pred) = -[y_true * log(σ(y_pred)) + (1 - y_true) * log(1 - σ(y_pred))]`
+* **Explanation:** Measures the binary cross-entropy between the model's logits (unscaled output) and the true labels (0 or 1).
+
+**5. Focal Loss:**
+
+* **Formula:** `FocalLoss(y_true, y_pred) = -Σ[α * (1 - p_t)^γ * y_t * log(p_t)]`
+* **Explanation:** Similar to BCEWithLogitsLoss, but introduces hyperparameters α and γ to downweight the loss for easily classified samples, focusing training on harder ones.
+
+## Code Details 
 
 **Requirements:**
 
