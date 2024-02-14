@@ -4,7 +4,7 @@ This code explores the impact of various loss functions on the accuracy of SAR s
 
 **Key Features:**
 
-- Compares CrossEntropy, L1, MSE, BCEWithLogitsLoss, and Focal Loss
+- Compares CrossEntropy, L1, MSE, BCEWithLogitsLoss, Kullback-Leibler Divergence and Focal Loss
 - Uses PyTorch for deep learning
 - Trains on the Fusar dataset, and OpenSARShip dataset
 - Evaluates accuracy on a test set
@@ -38,6 +38,11 @@ This section briefly explains and presents formulas for the loss functions used 
 
 * **Formula:** `FocalLoss(y_true, y_pred) = -Σ[α * (1 - p_t)^γ * y_t * log(p_t)]`
 * **Explanation:** Similar to BCEWithLogitsLoss, but introduces hyperparameters α and γ to downweight the loss for easily classified samples, focusing training on harder ones.
+
+**6. Kullback-Leibler Divergence Loss:**
+
+* **Formula:** `KLDiv(p||q) = Σ(p_i * log (p_i/q_i))`
+* **Explanation:** This measures the difference between two probability distributions and can be used as a loss function. However, it is less common than Cross-Entropy due to its computational complexity and sensitivity to outliers.
 
 ## Code Details 
 
