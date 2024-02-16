@@ -6,7 +6,7 @@ This code explores the impact of various loss functions on the accuracy of SAR s
 
 - Compares CrossEntropy, L1, MSE, BCEWithLogitsLoss, Kullback-Leibler Divergence and Focal Loss
 - Uses PyTorch for deep learning
-- Trains on the Fusar dataset, and OpenSARShip dataset
+- Trains on the Fusar dataset (tiff images), and OpenSARShip (png images) dataset
 - Evaluates accuracy on a test set
 - Supports GPU acceleration
 
