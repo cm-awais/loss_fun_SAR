@@ -57,7 +57,7 @@ This section briefly explains and presents formulas for the loss functions used 
 **Usage:**
 
 1. Install dependencies: `pip install -r requirements.txt`
-2. Download and extract the Fusar dataset into a directory named "data" or email the authors 😉
+2. Download and extract the both datasets or email the authors for datasets 😉
 3. Keep only three classes of data, Fishing, Tanker and Cargo. Whereas keep Fusar data in tiff format, while OpenSARShip in png format.
 4. Run the code in Jypyter Notebook: `sar_loss.ipynb`
 
