@@ -1,6 +1,6 @@
-# SAR Ship Classification with Different Loss Functions
+# Testing a SAR-based ship classifier with different loss functions
 
-This code explores the impact of various loss functions on the accuracy of SAR ship classification. It trains a convolutional neural network (CNN) with four different loss functions and compares their performance.
+This code explores the impact of various loss functions on the accuracy of SAR ship classification. It trains a convolutional neural network (CNN) with six different loss functions and compares their performance.
 
 **Key Features:**
 
@@ -57,7 +57,7 @@ This section briefly explains and presents formulas for the loss functions used 
 **Usage:**
 
 1. Install dependencies: `pip install -r requirements.txt`
-2. Download and extract the Fusar dataset into a directory named "data"
+2. Download and extract the Fusar dataset into a directory named "data" or email the authors 😉
 3. Keep only three classes of data, Fishing, Tanker and Cargo. Whereas keep Fusar data in tiff format, while OpenSARShip in png format.
 4. Run the code in Jypyter Notebook: `sar_loss.ipynb`
 
